@@ -14,7 +14,7 @@ def proxima_pagina(soup):
         base_url = 'https://www.amazon.com.br'
         prox = soup.find('a', {'class': 's-pagination-item s-pagination-next s-pagination-button s-pagination-separator'}).get('href')
         final_url = base_url + prox
-        return url
+        return final_url
     else:
         return
 
